@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>box-shadow básico</title>
+<style>
+    /* *box-shadow básico*: Sombras externas/internas con desplazamiento y difuminado */
+    div{
+        width: 200px;
+        height: 100px;
+        background-color: #4CAF50;
+        margin: 30px;
+        display: inline-block;
+    }
+
+    .shadow1{
+        box-shadow: 5px 5px #888;
+    }
+
+    .shadow2{
+        box-shadow: 10px 10px 5px #888;
+    }
+
+    .shadow3{
+        box-shadow: 0 0 10px #888;
+    }
+
+    .shadow4{
+        box-shadow: 5px 5px 10px 5 px #888;
+    }
+
+    .shadow5{
+        box-shadow: inset 0 0 10px #000;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 1 - box-shadow básico</h1>
+<div class="shadow1">Desplazamiento básico</div>
+<div class="shadow2">Con difuminado</div>
+<div class="shadow3">Solo difuminado</div>
+<div class="shadow4">Con expansión</div>
+<div class="shadow5">Sombra interna</div>
+</body>
+</html>

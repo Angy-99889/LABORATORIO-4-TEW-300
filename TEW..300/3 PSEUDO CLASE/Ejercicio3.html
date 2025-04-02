@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>:focus</title>
+<style>
+    /* *:focus*: Estilos para inputs enfocados (borde verde, sombra, textarea con fondo gris claro). */
+    input{
+        padding: 8px;
+        margin: 5px;
+        border: 1px solid #ccc;
+    }
+    input:focus{
+        outline: none;
+        border-color: #4CAF50;
+        box-shadow: 0 0 5px rgba(76, 175,80, 0.5);
+    }
+    textarea:focus{
+        background-color:#f8f8f8 ;
+    }
+</style>
+ </head>
+<body>
+<h1>Ejemplo 3 - :focus</h1>
+<form>
+<input type="text" placeholder="Nombre">
+<input type="email" placeholder="Email">
+<textarea placeholder="Mensaje"></textarea>
+</form>
+</body>
+</html>

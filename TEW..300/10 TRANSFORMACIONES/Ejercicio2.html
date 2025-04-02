@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>rotate()</title>
+<style>
+    /* *rotate()*: Gira elementos (grados o vueltas completas). */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #2196F3;
+      margin: 50px;
+      display: inline-block;
+      transition: transform 0.5s;
+    }
+    .rotate1:hover {
+      transform: rotate(45deg);
+    }
+    .rotate2:hover {
+      transform: rotate(90deg);
+    }
+    .rotate3:hover {
+      transform: rotate(-30deg);
+    }
+    .rotate4:hover {
+      transform: rotate(180deg);
+    }
+    .rotate5:hover {
+      transform: rotate(1turn);
+    }
+    </style>    
+</head>
+<body>
+<h1>Ejemplo 2 - rotate()</h1>
+<div class="rotate1">45deg</div>
+<div class="rotate2">90deg</div>
+<div class="rotate3">-30deg</div>
+<div class="rotate4">180deg</div>
+<div class="rotate5">1turn</div>
+</body>
+</html>

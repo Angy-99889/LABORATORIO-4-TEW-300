@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Múltiples sombras</title>
+<style>
+    /* *Múltiples sombras*: Efectos neón, 3D y capas superpuestas. */
+    div{
+        width: 200px;
+        height: 100px;
+        background-color: #2196f3;
+        margin: 30px;
+        display: inline-block;
+    }
+    .multi-shadow1{
+        box-shadow: 5px 5px 5px #ff5733, -5px -5px 5px #33ff57
+    }
+    .multi-shadow2{
+        box-shadow: 0 0 10px #ffc300, 0 0 20px #ff5733, 0 0 30px #c70039;
+
+    }
+    .multi-shadow3{
+        box-shadow: inset 0 0 10px #000, 0 0 20px #000;
+    }
+    .multi-shadow4{
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff5733;
+    }
+    .multi-shadow5{
+        box-shadow: 1px 1px #333, 2px 2px #333, 3px 3px #333, 4px 4px #333;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 2 - Múltiples sombras</h1>
+<div class="multi-shadow1">Dos sombras</div>
+<div class="multi-shadow2">Efecto neón</div>
+<div class="multi-shadow3">Interna y externa</div>
+<div class="multi-shadow4">Efecto de capas</div>
+<div class="multi-shadow5">Efecto 3D</div>
+</body>
+</html>

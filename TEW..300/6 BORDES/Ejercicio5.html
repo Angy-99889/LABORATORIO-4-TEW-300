@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Botones con bordes redondeados</title>
+<style>
+    /* *Botones*: Estilos variados (pastilla, ovalado, círculo, asimétrico). */
+    button{
+        padding: 12px 24px;
+        margin: 10px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+    }
+    .btn-pill{
+        border-radius: 50px;
+        background-color: #FF5722;
+    }
+    .btn-pill:hover{
+        background-color: #E64A19;
+        transform: translate(-2px);
+
+    }
+    .btn-rounded{
+        border-radius: 10px;
+        background-color: #673AB7;
+
+    }
+    .btn-rounded:hover{
+        background-color: #5E35B1;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .btn-oval{
+        border-radius: 50% / 100%;
+        background-color: #009688;
+        padding: 12px 36px;
+    }
+    .btn-oval:hover{
+        background-color: #00897B;
+    }
+    .btn-circle{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #F44336;
+        font-size: 24px;
+    }
+    .btn-circle:hover{
+        background-color: #E53935;
+        transform: rotate(360deg);
+    }
+
+    .btn-asymmetric{
+        border-radius: 15px 5px 15px 5px;
+        background-color: #3f51b5;
+    }
+
+    .btn-asymmetric:hover{
+        border-radius: 5px 15px 5px 15px;
+        background-color: #3949AB;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 5 - Botones con bordes redondeados</h1>
+<button class="btn-pill">Píldora</button>
+<button class="btn-rounded">Redondeado</button>
+<button class="btn-oval">Ovalado</button>
+<button class="btn-circle">+</button>
+<button class="btn-asymmetric">Asimétrico</button>
+</body>
+</html>

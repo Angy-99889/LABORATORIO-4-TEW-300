@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>:not()</title>
+<style>
+    /* *:not()*: Excluye elementos (inputs no submit, párrafos sin clase .especial, todo menos <div>) */
+    input:not([type="submit"]){
+        width: 100px;
+        padding: 8px;
+        margin: 3px;
+    }
+    p:not(.especial){
+        color:#666 ;
+    }
+    :not(){
+        font-family: Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 5 - :not()</h1>
+<form>
+<input type="text" placeholder="Nombre">
+<input type="email" placeholder="Email">
+<input type="submit" value="Enviar">
+</form>
+<p>Este párrafo es gris.</p>
+<p class="especial">Este párrafo no es gris.</p>
+<div>Este div no usa Arial porque está excluido.</div>
+</body>
+</html>

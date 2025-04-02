@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Selector de atributo</title>
+<style>
+    /* Selector de atributo aplica a imputs con tybe="text" */
+    input[type="text"]{
+        background-color: lightblue;
+        border: 2px solid darkblue;
+        padding: 5px;
+    }
+    a[target="_blank"]{
+        color: red;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 5 - Selector de atributo</h1>
+<form>
+<input type="text" placeholder="Nombre">
+<input type="password" placeholder="Contraseña">
+<input type="text" placeholder="Apellido">
+</form>
+<a href="#" target="_blank">Enlace externo</a>
+<a href="#">Enlace normal</a>
+</body>
+</html>

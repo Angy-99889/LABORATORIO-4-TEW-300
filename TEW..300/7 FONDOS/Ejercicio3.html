@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>background-repeat</title>
+<style>
+    /* *background-repeat*: Controla la repetición de imágenes (repeat-x, no-repeat, etc. */
+      div{
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    display: inline-block;
+    border: 1px solid #333;
+   background-image:url('https://picsum.photos/100/50') ;
+  }
+  .repeat1{background-repeat: repeat;}
+  .repeat2{background-repeat: repeat-x;}
+  .repeat3{background-repeat: repeat-y;}
+  .repeat4{background-repeat: no-repeat;}
+  .repeat5{background-repeat: space;}
+</style>
+</head>
+<body>
+<h1>Ejemplo 3 - background-repeat</h1>
+<div class="repeat1">repeat (por defecto)</div>
+<div class="repeat2">repeat-x</div>
+<div class="repeat3">repeat-y</div>
+<div class="repeat4">no-repeat</div>
+<div class="repeat5">space</div>
+</body>
+</html>

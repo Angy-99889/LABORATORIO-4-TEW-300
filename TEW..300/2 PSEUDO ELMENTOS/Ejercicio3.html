@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>::before</title>
+<style>
+    /* *::before*: Añade contenido antes de elementos (ej: "Nota:" en naranja o comillas) */
+    .nota::before{
+        content: "Nota: ";
+        font-weight: bold;
+        color: orange;
+    }
+    .importante::before{
+        content: "⚠️" ;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 3 - ::before</h1>
+<p class="nota">Este es un texto de ejemplo con un pseudo-elemento 
+::before.</p>
+<p class="importante">Este mensaje es importante.</p>
+<p>Este párrafo no tiene estilos especiales.</p>
+</body>
+</html>

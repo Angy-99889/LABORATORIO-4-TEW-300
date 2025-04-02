@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* *Filtros combinados*: Escala de grises + sepia simultáneamente */
+        img {
+          width: 300px;
+          margin: 20px;
+          transition: filter 0.5s;
+        }
+        .grayscale {
+          filter: grayscale(100%);
+        }
+        .sepia {
+          filter: sepia(100%);
+        }
+        .combinado {
+          filter: grayscale(50%) sepia(50%);
+        }
+        </style>
+    
+</head>
+<body>
+<h1>Ejemplo 4 - </h1>
+<img src="https://picsum.photos/3" alt="Original">
+<img class="grayscale" src="https://picsum.photos/3" alt="Escala 
+de grises">
+<img class="sepia" src="https://picsum.photos/3" alt="Sepia">
+<img class="combinado" src="https://picsum.photos/3"
+alt="Combinado">
+</body>
+</html>

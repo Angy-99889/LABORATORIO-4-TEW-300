@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>border-radius por esquinas</title>
+<style>
+    /* *Por esquinas*: Radio personalizado por esquina (ej: 10px 20px 30px 40px) */
+     div{
+        width: 200px;
+        height: 100px;
+        background-color: #2196f3;
+        margin: 20PX;
+        display: inline-block;
+    }
+    .esquina1{border-radius: 10px 20px 30px 40px;}
+    .esquina2{border-radius: 50px 0 50px 0;}
+    .esquina3{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .esquina4{border-radius: 100px 0 0 0;}
+    .esquina5{border-radius: 0 50px 0 0;}
+</style>
+</head>
+<body>
+<h1>Ejemplo 2 - border-radius por esquinas</h1>
+<div class="esquina1"></div>
+<div class="esquina2"></div>
+<div class="esquina3"></div>
+<div class="esquina4"></div>
+<div class="esquina5"></div>
+</body>
+</html>

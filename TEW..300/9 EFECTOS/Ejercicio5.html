@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* *clip-path*: Recorta elementos en formas (círculo, triángulo, estrella) */
+        .shape {
+          width: 300px;
+          height: 200px;
+          background-color: #2196F3;
+          margin: 30px;
+        }
+        .circulo {
+          clip-path: circle(50% at 50% 50%);
+        }
+        .poligono {
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        .estrella {
+          clip-path: polygon(
+            50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
+            50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+          );
+        }
+        </style>
+</head>
+<body>
+<h1>Ejemplo 5 - </h1>
+<div class="shape circulo"></div>
+<div class="shape poligono"></div>
+<div class="shape estrellas"></div>
+</body>
+</html>

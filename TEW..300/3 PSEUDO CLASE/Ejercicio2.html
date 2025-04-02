@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>:active</title>
+<style>
+    /* *:active*: Cambios al hacer clic (botón azul oscuro, párrafos con fondo amarillo). */
+    button{
+        padding: 12px 24px;
+        background-color:#2196F3 ;
+        color: wheat;
+        border: none;
+    }
+    button:active{
+        background-color:#0b7dda ;
+        transform: translateY(2px);
+        box-shadow: 0 2ps 4px rgba(0, 0, 0,0, 2);
+    }
+    p:active{
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 2 - :active</h1>
+<button>Haz clic y mantén presionado</button>
+<p>Este párrafo cambiará cuando hagas clic y mantengas 
+presionado.</p>
+</body>
+</html>

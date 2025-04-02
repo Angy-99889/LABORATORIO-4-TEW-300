@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>skew()</title>
+<style>
+    /* *skew()*: Inclina elementos (deformación en X/Y) */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #9C27B0;
+      margin: 50px;
+      display: inline-block;
+      transition: transform 0.5s;
+    }
+    .skew1:hover {
+      transform: skew(20deg);
+    }
+    .skew2:hover {
+      transform: skew(20deg, 10deg);
+    }
+    .skew3:hover {
+      transform: skew(-15deg);
+    }
+    .skew4:hover {
+      transform: skewX(30deg);
+    }
+    .skew5:hover {
+      transform: skewY(20deg);
+    }
+    </style>
+</head>
+<body>
+<h1>Ejemplo 4 - skew()</h1>
+<div class="skew1">skew(20deg)</div>
+<div class="skew2">skew(x,y)</div>
+<div class="skew3">skew(-15deg)</div>
+<div class="skew4">skewX()</div>
+<div class="skew5">skewY()</div>
+</body>
+</html>

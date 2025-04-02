@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>border-radius elíptico</title>
+<style>
+    /* *Elíptico*: Bordes ovalados (ej: 50% / 20%) */
+     div{
+        width: 200px;
+        height: 100px;
+        background-color: #ff9800;
+        margin: 20PX;
+        display: inline-block;
+    }
+    .eliptico1{border-radius: 50% / 50%;}
+    .eliptico2{border-radius: 50% 50% 50% 50% / 20% 20% 20% 20%;}
+    .eliptico3{border-radius: 10% 30% 50% 70% / 50% 50% 50% 50%;}
+    .eliptico4{border-radius: 50% / 100%;}
+    .eliptico5{border-radius:  100% 50% / 50% 100%;}
+</style>
+</head>
+<body>
+<h1>Ejemplo 3 - border-radius elíptico</h1>
+<div class="eliptico1"></div>
+<div class="eliptico2"></div>
+<div class="eliptico3"></div>
+<div class="eliptico4"></div>
+<div class="eliptico5"></div>
+</body>
+</html>

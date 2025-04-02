@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>background-position</title>
+<style>
+    /* *background-position*: Posiciona la imagen (left, center, coordenadas exactas) */
+      div{
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+    display: inline-block;
+    border: 1px solid #333;
+   background-image:url('https://picsum.photos/100/50') ;
+   background-repeat: no-repeat;
+  }
+
+  .position1{ background-position: left top;}
+  .position1{ background-position: center center;}
+  .position1{ background-position: right bottom;}
+  .position1{ background-position: 50px 30px;}
+  .position1{ background-position: 80% 20%;}
+</style>
+</head>
+<body>
+<h1>Ejemplo 4 - background-position</h1>
+<div class="position1">left top</div>
+<div class="position2">center center</div>
+<div class="position3">right bottom</div>
+<div class="position4">50px 30px</div>
+<div class="position5">80% 20%</div>
+</body>
+</html>

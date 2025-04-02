@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animaciones prácticas</title>
+<style>
+    /* *Pausa con hover*: Detiene la animación al pasar el mouse */
+    .cargando {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #3498db;
+        border-radius: 50%;
+        margin: 30px;
+        animation: girar 1s linear infinite;
+    }
+
+    .boton-animado {
+        padding: 12px 24px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 20px;
+        transition: all 0.3s;
+    }
+    .boton-animado:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        .boton-animado:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin: 20px;
+            position: relative;
+        }
+
+        .menu-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #2196F3;
+            transition: width 0.3s;
+        }
+
+        .menu-item:hover::after {
+            width: 100%;
+        }
+
+        .tarjeta {
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .notificacion {
+            padding: 15px;
+            background-color: #FF5722;
+            color: white;
+            margin: 20px;
+            opacity: 0;
+            animation: aparecer 2s forwards;
+        }
+
+        @keyframes girar {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes aparecer {
+            0% { opacity: 0; transform: translateY(-20px); }
+            20% { opacity: 1; transform: translateY(0); }
+            80% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-20px); }
+        }
+    </style>
+
+</head>
+<body>
+<h1>Ejemplo 5 - Animaciones prácticas</h1>
+<div class="cargando"></div>
+<button class="boton-animado">Botón animado</button>
+<div class="menu-item">Inicio</div>
+<div class="menu-item">Servicios</div>
+<div class="menu-item">Contacto</div>
+<div class="tarjeta">
+<h3>Tarjeta</h3>
+<p>Pasa el mouse sobre mí</p>
+</div>
+<div clases="notificacion">¡Nueva notificación!</div>
+</body>
+</html>

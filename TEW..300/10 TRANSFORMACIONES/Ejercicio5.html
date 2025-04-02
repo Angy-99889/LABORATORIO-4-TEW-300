@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transformaciones múltiples</title>
+<style>
+    /* *Transformaciones múltiples*: Combina translate, rotate y scale */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #F44336;
+      margin: 50px;
+      display: inline-block;
+      transition: transform 0.5s;
+    }
+    .multi-transform1:hover {
+      transform: translate(50px, 20px) rotate(45deg);
+    }
+    .multi-transform2:hover {
+      transform: scale(1.2) rotate(-15deg);
+    }
+    .multi-transform3:hover {
+      transform: skew(20deg) scaleY(1.5);
+    }
+    .multi-transform4:hover {
+      transform: rotate(45deg) scale(1.5) translateX(50px);
+    }
+    .multi-transform5:hover {
+  transform: perspective(500px) rotateY(45deg);
+}
+</style>
+
+</head>
+<body>
+<h1>Ejemplo 5 - Transformaciones múltiples</h1>
+<div class="multi-transform1">translate + rotate</div>
+<div class="multi-transform2">scale + rotate</div>
+<div class="multi-transform3">skew + scaleY</div>
+<div class="multi-transform4">rotate + scale + translate</div>
+<div class="multi-transform5">perspective + rotateY</div>
+</body>
+</html>

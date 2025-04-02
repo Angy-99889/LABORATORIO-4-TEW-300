@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>:nth-child()</title>
+<style>
+    /* *:nth-child()*: Selecciona elementos específicos (items pares grises, primera fila en negrita). */
+    li:nth-child(2n){
+        background-color: #f2f2f2;
+    }
+    li:nth-child(1n){
+        font-weight: bold;
+    }
+    tr:nth-child(3n+2){
+        background-color: #e6f7ff;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 4 - :nth-child()</h1>
+<ul>
+<li>Item 1 (negrita)</li>
+<li>Item 2 (fondo gris)</li>
+<li>Item 3</li>
+<li>Item 4 (fondo gris)</li>
+<li>Item 5</li>
+</ul>
+<table border="1">
+<tr><td>Fila 1</td></tr>
+<tr><td>Fila 2 (fondo azul claro)</td></tr>
+<tr><td>Fila 3</td></tr>
+<tr><td>Fila 4</td></tr>
+<tr><td>Fila 5 (fondo azul claro)</td></tr>
+</table>
+</body>
+</html>

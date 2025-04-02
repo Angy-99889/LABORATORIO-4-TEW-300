@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>@keyframes básico</title>
+<style>
+    /* *@keyframes básico*: Define movimientos, cambios de color y giros */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #2196F3;
+      margin: 30px;
+      position: relative;
+    }
+    .keyframes1 {
+      animation: mover 3s infinite;
+    }
+    .keyframes2 {
+      animation: cambiar-color 4s infinite;
+    }
+    .keyframes3 {
+      animation: girar 2s infinite linear;
+    }
+    .keyframes4 {
+      animation: latido 1.5s infinite;
+    }
+    .keyframes5 {
+      animation: combinado 5s infinite;
+    }
+    @keyframes mover {
+  0% { left: 0; }
+  50% { left: 200px; }
+  100% { left: 0;}
+}
+@keyframes cambiar-color {
+  0% { background-color: #2196F3; }
+  50% { background-color: #FF5722; }
+  100% { background-color: #2196F3;}
+}
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes latido {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@keyframes combinado {
+  0% { transform: translate(0) rotate(0) scale(1); background-color: #2196F3; }
+  25% { transform: translate(100px, 0) rotate(90deg) scale(1.2); background-color: #FF5722; }
+  50% { transform: translate(100px, 100px) rotate(180deg) scale(1.3); background-color: #4CAF50; }
+  75% { transform: translate(0, 100px) rotate(270deg) scale(1.2); background-color: #FFC107; }
+  100% { transform: translate(0) rotate(360deg) scale(1); background-color: #2196F3;}
+}
+</style>
+
+</head>
+<body>
+<h1>Ejemplo 2 - @keyframes básico</h1>
+<div class="keyframes1">Movimiento</div>
+<div class="keyframes2">Cambio de color</div>
+<div class="keyframes3">Rotación</div>
+<div class="keyframes4">Latido</div>
+<div class="keyframes5">Combinado</div>
+</body>
+</html>

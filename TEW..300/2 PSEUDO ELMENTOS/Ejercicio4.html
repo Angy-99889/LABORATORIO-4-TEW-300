@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>::after</title>
+<style>
+    /* *::after*: Inserta contenido después (ej: " USD" en verde o un símbolo ↗ en enlaces) */
+    .precio::after{
+        content: "USD:";
+        color: green;
+        font-weight: bold;
+
+    }
+    a.externo::after{
+        content: "↗️";
+        font-size: 0.8em;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 4 - ::after</h1>
+<p class="precio">199.99</p>
+<p class="precio">49.50</p>
+<a href="#" class="externo">Enlace externo</a>
+<a href="#">Enlace normal</a>
+</body>
+</html>

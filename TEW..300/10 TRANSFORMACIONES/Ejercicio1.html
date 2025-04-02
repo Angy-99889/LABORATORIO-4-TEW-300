@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>translate()</title>
+<style>
+    /* *translate()*: Mueve elementos en eje X/Y (píxeles o porcentaje) */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      margin: 30px;
+      display: inline-block;
+      transition: transform 0.5s;
+    }
+    .translate1:hover {
+      transform: translate(20px, 20px);
+    }
+    .translate2:hover {
+      transform: translateX(50px);
+    }
+    .translate3:hover {
+      transform: translateY(-30px);
+    }
+    .translate4:hover {
+      transform: translate(20px, -20px);
+    }
+    .translate5:hover {
+      transform: translate(50%);
+    }
+    </style>
+</head>
+<body>
+<h1>Ejemplo 1 - translate()</h1>
+<div class="translate1">translate(x,y)</div>
+<div class="translate2">translateX()</div>
+<div class="translate3">translateY()</div>
+<div class="translate4">translate(x,-y)</div>
+<div class="translate5">translate(50%)</div>
+</body>
+</html>

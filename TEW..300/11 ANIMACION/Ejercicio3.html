@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Propiedades de animación</title>
+<style>
+    /* *Propiedades de animación*: Controla dirección (alternate), timing (steps), delay y fill-mode */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #FF9800;
+      margin: 30px;
+      position: relative;
+    }
+    .anim-prop1 {
+      animation: mover 3s ease-in-out infinite alternate;
+    }
+    .anim-prop2 {
+      animation: mover 3s linear infinite reverse;
+    }
+    .anim-prop3 {
+      animation: mover 3s steps(5) infinite;
+    }
+    .anim-prop4 {
+      animation: mover 3s infinite;
+      animation-delay: 1s;
+    }
+    .anim-prop5 {
+  animation: mover 3s infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes mover {
+  0% { left: 0; background-color: #FF9800; }
+  100% { left: 200px; background-color: #F44336; }
+}
+</style>
+
+</head>
+<body>
+<h1>Ejemplo 3 - Propiedades de animación</h1>
+<div class="anim-prop1">ease-in-out + alternate</div>
+<div class="anim-prop2">linear + reverse</div>
+<div class="anim-prop3">steps(5)</div>
+<div class="anim-prop4">delay 1s</div>
+<div class="anim-prop5">fill-mode forwards</div>
+</body>
+</html>

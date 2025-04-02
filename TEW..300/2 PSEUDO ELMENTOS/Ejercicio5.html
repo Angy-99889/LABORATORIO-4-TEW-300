@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>::selection</title>
+<style>
+    /* *::selection*: Cambia el estilo al seleccionar texto (fondo rosa/sombra) o en párrafos específicos (verde) */
+    ::selection{
+        background-color: pink;
+        color: wheat;
+        text-shadow: 2px 2px 2px black;
+    }
+    p.especial::selection{
+        background-color: lightgreen;
+        color: black;
+    }
+</style>
+</head>
+ <body>
+<h1>Ejemplo 5 - ::selection</h1>
+<p>Selecciona este texto para ver el efecto del pseudo-elemento 
+::selection.</p>
+<p class="especial">Este párrafo tiene un estilo de selección 
+diferente.</p>
+<div>Intenta seleccionar cualquier parte de esta página.</div>
+</body>
+</html>

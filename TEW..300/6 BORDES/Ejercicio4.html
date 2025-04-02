@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tarjetas con bordes redondeados</title>
+<style>
+    /* *Tarjetas*: Diseño de tarjetas con bordes redondeados y sombra. */
+    .card{
+        width: 250px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+    }
+    .card imag{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .card-content{padding: 15px;}
+    .card h3{margin: 0;}
+    .card-button{
+        display: block;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .circular-card{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #2196f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 4 - Tarjetas con bordes redondeados</h1>
+<div class="card">
+<img src="https://picsum.photos/250/150" alt="Placeholder">
+<div class="card-content">
+<h3>Tarjeta Ejemplo</h3>
+<p>Esta es una tarjeta con bordes redondeados y 
+sombra.</p>
+<a href="#" class="card-button">Botón</a>
+</div>
+</div>
+<div class="circular-card">
+Tarjeta Circular
+</div>
+</body>
+</html>

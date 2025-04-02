@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sombras de texto</title>
+<style>
+    /* *Sombras de texto*: Efectos básicos, de colores, difuminados, 3D, neón y "grabado". */
+    h2{
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        font-size: 3em;
+    }
+    .sombra-color{
+        text-shadow: 3px 3px 3px #ff0000, 0px 0px 0px #0000ff;
+    font-size: 2em;
+
+    }
+    .sombra-difuminada{
+        text-shadow: 0 0 10px #00ff00;
+        font-size: 2em;
+        color: white;
+        background-color: black;
+    }
+    .sombra-multiple{
+text-shadow: 1px 1px 2px black, 0 0 1em blue,0 0 0.2em blue;
+font-size: 2em;
+color: white;
+background-color: #333;
+    }
+    .sombra-interna{
+        color: transparent;
+        background-color: #333;
+        text-shadow: 0 0 5px rgba(255,255,255,0.8);
+        font-size: 2em;
+    }
+</style>
+</head>
+<body>
+<h1>Ejemplo 4 - Sombras de texto</h1>
+<h2>Texto con sombra básica</h2>
+<p class="sombra-color">Texto con sombras de colores</p>
+<p class="sombra-difuminada">Texto con sombra difuminada</p>
+<p class="sombra-multiple">Texto con múltiples sombras</p>
+<p class="sombra-interna">Efecto de sombra interna</p>
+</body>
+</html>
